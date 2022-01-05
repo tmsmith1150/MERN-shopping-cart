@@ -2,6 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const connectDB = require("./config/db");
 const productRoutes = require("./routes/productRoutes");
+const uri = process.env.MONGODB_URI;
 
 connectDB();
 
